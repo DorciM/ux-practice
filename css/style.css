@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1, h2, h3, h5, h6, p {
+    margin-bottom: 20px;
+}
+
+/*    NAVBAR start here  */
+.navbar-default {
+    background-color: white !important;
+    border-color: white !important;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 99;
+}
+
+a {
+    color: #000 !important;
+}
+.header {
+    position: relative;
+}
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.header #phone {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: 10px;
+    left: 60%;
+    width: 211px;
+    height: 37px;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: #ffd200;
+    float: right;
+
+}
+
+.glyphicon-log-in {
+    position: absolute;
+    font-weight: 100;
+    font-size: x-large;
+    line-height: 2;
+    float: right;
+    padding: 18px 110px;
+
+}
+
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+    background-color: #f4f4f4;
+}
+
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 70px 50px;
+    position: relative;
+    user-select: none;
+    float: left;
+}
+
+.header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/*    End of NAVBAR   */
+
+
+.sect {
+    height: 100%;
+    background-size: cover;
+}
+
+
+/*    1st SubSection - 4 circles    */
+.subSect1 {
+    height: 362px;
+    background-color: white;
+}
+
+.container {
+    padding-top: 3%;
+}
+
+.process-icons {
+    text-align: -webkit-center;
+}
+
+/*      HOW TO icons   */
+
+
+.sectOne {
+    background-image: url("../images/Main_banner.jpg");
+    background-position: center;
+    height: 600px;
+}
+
+.sectOne h1 {
+    text-align: center;
+    padding-top: 10%;
+    color: #303030;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: 'Work Sans', sans-serif;
+    font-size: -webkit-xxx-large;
+    word-spacing: 2px;
+}
+
+.sectOne h3 {
+    text-align: center;
+    padding-top: 2%;
+    color: #303030;
+    font-weight: 100;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.sectOne button, .sectThree button {
+    background-color: transparent;
+    border-color: #303030;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    padding: 15px 40px 15px 40px;
+    font-size: xx-large;
+    color: #303030;
+    border-style: solid;
+    word-spacing: 1px;
+    margin-top: 50px;
+}
+
+.sectOne #button {
+    text-align: center;
+}
+
+/*    Advantages Section   */
+
+.sectTwo {
+    background-color: #f3f0e7;
+    height: 817px;
+}
+
+.sectTwo #advantage{
+    text-align: -webkit-center;
+    font-size: x-large;
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.sectTwo #red-button {
+    margin-top: 160px;
+}
+
+.sectTwo button {
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: transparent;
+    font-weight: 100;
+    font-size: large;
+    /* How to center a button horizontally */
+    margin:0 auto;
+    display:block;
+}
+
+/*    Ready Solutions   */
+/*    TODO: place cards one by one, sepaarate the title
+      TODO: cards should be still images, but with an <a href=> tag  */
+.subSect2 {
+    height: 730px;
+}
+
+.subSect2 .card {
+    border-color: #ffd200;
+    border-width: thick;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 0;
+    height: 419px;
+    width: 20.5%;
+    min-width: 270px;
+    display: block;
+    margin: 20px;
+    float: left;
+}
+
+.subSect2 .row-centered {  text-align: center;  }
+.subSect2 .card-centered {
+    display:inline-block;
+    float:none;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.subSect2 .card-footer, .card-header {  background-color: #ffd200;  }
+
+.subSect2 .card-header {
+    height: 112px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.subSect2 .card-header h4 {
+    margin-top: 0;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    font-size: xx-large;
+}
+
+.subSect2 .diagonal-corners-tab h5 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.3em;
+    color: red;
+    padding-top: 0;
+    text-align: center;
+}
+
+.subSect2 #bestseller {
+    padding-top: 5px;
+    height: 30px;
+}
+
+.subSect2 #classic-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+ .subSect2 .diagonal-corners-tab {
+     border-bottom: 30px solid #ffd200;
+     border-left: 40px solid white;
+     border-right: 40px solid white;
+     height: 0;
+     width: 80%;
+     margin-left: 30px;
+ }
+
+ .subSect2 .custom {
+     border-top-color: transparent;
+     border-left-color: transparent;
+     border-right-color: transparent;
+ }
+
+.subSect2 .card-block {  height: 248px;  }
+
+.subSect2 .card-block ul {
+    line-height: 2;
+    margin-top: 6px;
+}
+
+.subSect2 .card-block  #light {
+    font-size: 4.0em;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 26%;
+}
+
+.subSect2 .card-block  #classic {
+    font-size: 4.0em;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 18%;
+}
+
+.subSect2 .custom .card-block {
+    border-left: #ffd200 solid 4px;
+    border-right: #ffd200 solid 4px;
+    border-top: #ffd200 solid;
+}
+
+.subSect2 .card-block  #premium {
+    font-size: 4.0em;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 11%;
+}
+
+.subSect2 .card-footer {
+    height: 47px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.subSect2 .card-footer h4 {
+    margin-top: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.4em;
+    padding-top: 15px;
+}
+
+
+/*   Testimonial   */
+.sectThree {
+    background-image: url("../images/Testimonial_banner.png");
+    background-position: center;
+    height: 767px;
+}
+
+.sectThree h4 {
+   font-family: 'Work Sans', sans-serif;
+    font-size: 2.8em;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    margin-left: 20%;
+}
+
+.sectThree button {
+    margin-left: 200px;
+}
+
+.sectThree .profile-img {
+    margin-left: 30%;
+    margin-bottom: 20px;
+}
+
+.sectThree .details {
+    margin: 30px 90px 30px 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+    min-width: 300px;
+    width: 100%;
+}
